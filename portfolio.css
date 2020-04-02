@@ -122,11 +122,35 @@ body {
   margin: 0 auto;
 }
 
+.img_navi_menu {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.navi_menu {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.navi_menu li {
+  font-size: 30px;
+  margin: 20px 0 20px 0;
+  font-family: 'Arial Black',sans-serif;
+}
+
 .main_text {
   width: 100%;
   height: auto;
-  margin-top: 180px;
+  margin-top: 200px;
   text-align: center;
+  opacity: 0;
 }
 
 .main_text .st_1,
@@ -138,6 +162,14 @@ body {
   font-family: 'Arial Black',sans-serif;
   margin: 50px 0 50px 0;
   letter-spacing: 0.33em;
+}
+
+.main_text.hide {
+  opacity: 1;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: all 2s;
+  transition: all 2s;
 }
 
 .studio {
@@ -188,6 +220,67 @@ body {
   margin: 0 30px 0 0;
 }
 
+.mn_studio {
+  opacity: 0;
+  margin-top: 170px;
+}
+
+.column_1 {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.column_1_1 {
+  width: 90%;
+  height: auto;
+  padding: 0.5em 1em;
+  margin: 2em 0.15em;
+  color: #333333;
+  background: white;
+  border-top: solid 3px #000;
+  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.column_1_1 :hover {
+  opacity: 0.7;
+}
+
+.column_1_1 .img_main {
+  width: 100%;
+  height: 60%;
+  text-align: center;
+}
+
+.column_1_1 .marks {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 10px;
+  text-align: left;
+}
+
+.column_1_1 .cl_icon {
+  margin-top: 5px;
+}
+
+.column_1_1 h2 {
+  width: 100%;
+  height: auto;
+  font-size: 1.2vw;
+  text-align: left;
+}
+
+.mn_topics {
+  opacity: 0;
+  margin-top: 70px;
+}
+
 .tp_text {
   text-align: center;
 }
@@ -195,6 +288,11 @@ body {
 .tp_text h3 {
   font-size: 30px;
   margin: 0 0 20px 0;
+}
+
+.mn_profile {
+  opacity: 0;
+  margin-top: 90px;
 }
 
 .profile {
@@ -250,6 +348,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 70px;
+  opacity: 0;
 }
 
 .contact {
@@ -327,60 +427,8 @@ body {
   padding-top: 20px;
 }
 
-.column_1 {
-  width: 100%;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.column_1_1 {
-  width: 90%;
-  height: auto;
-  padding: 0.5em 1em;
-  margin: 2em 0.15em;
-  color: #333333;
-  background: white;
-  border-top: solid 3px #000;
-  -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-}
-
-.column_1_1 :hover {
-  opacity: 0.7;
-}
-
-.column_1_1 .img_main {
-  width: 100%;
-  height: 60%;
-  text-align: center;
-}
-
-.column_1_1 .marks {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px 0 10px;
-  text-align: left;
-}
-
-.column_1_1 .cl_icon {
-  margin-top: 5px;
-}
-
-.column_1_1 h2 {
-  width: 100%;
-  height: auto;
-  font-size: 1.2vw;
-  text-align: left;
-}
-
 .ft_inner {
   width: 100%;
-  margin-top: 50px;
   border-top: solid 1px #cccccc;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -397,5 +445,37 @@ body {
   width: 40px;
   height: 40px;
   margin: 0 10px 0 10px;
+}
+
+.mn_studio.hide1 {
+  opacity: 1;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.mn_topics.hide2 {
+  opacity: 1;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.mn_profile.hide2 {
+  opacity: 1;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.mn_contact.hide2 {
+  opacity: 1;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
 }
 /*# sourceMappingURL=portfolio.css.map */
